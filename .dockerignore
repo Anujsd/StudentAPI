@@ -1,0 +1,5 @@
+.github
+*.json
+*.md
+*.gitignore
+*.dockerignore

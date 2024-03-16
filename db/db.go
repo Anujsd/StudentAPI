@@ -6,16 +6,20 @@ import (
 	"log"
 	"os"
 
+	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
 
 var DB *sql.DB
 
 func InitDB() {
-	// Connection string
+	var err error
+	err = godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 	connStr := os.Getenv("CONNECTION_STRING")
 
-	var err error
 	// Connect to the database
 	DB, err = sql.Open("postgres", connStr)
 	if err != nil {

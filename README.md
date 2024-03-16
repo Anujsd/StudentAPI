@@ -2,6 +2,12 @@
 
 This REST API is built using Go and provides endpoints for basic CRUD operations on student records.
 
+## Run locally
+
+```
+docker compose up
+```
+
 ## Endpoints
 
 | Endpoint          | Method | Description                                                                                                                           |
