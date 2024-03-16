@@ -27,11 +27,11 @@ For example:
 - To retrieve all students, send a GET request to `/v1/students`.
 - To add a new student, send a POST request to `/v1/student` with the student's details in the request body.
 
-## Setup
+## Setup Without Docker
 
 1. Clone this repository to your local machine.
 2. If you haven't already, install Go.
-3. Use `go mod tidy` to install the necessary dependencies.
+3. Use `go get .` to install the necessary dependencies.
 4. Obtain the PostgreSQL connection string and create an environment variable named `CONNECTION_STRING`.
 5. Build and run the application.
 
